@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+    </head>
+    <body>
+        <referenceBlock name="search_result_list" >
+            <block name="product_list_item" class="Magento\Catalog\Block\Product\ListProduct" template="Gabrielqs_ThemeSettings::product/list/items/renderer5.phtml">
+                <block name="placeholders_grid_1" class="Magento\Framework\View\Element\Template" template="Gabrielqs_ThemeSettings::product/list/placeholder.phtml" />
+                <block name="placeholders_grid_2" class="Magento\Framework\View\Element\Template" template="Gabrielqs_ThemeSettings::product/list/placeholder.phtml" />
+                <block name="placeholders_grid_3" class="Magento\Framework\View\Element\Template" template="Gabrielqs_ThemeSettings::product/list/placeholder.phtml" />
+                <block name="placeholders_grid_4" class="Magento\Framework\View\Element\Template" template="Gabrielqs_ThemeSettings::product/list/placeholder.phtml" />
+            </block>
+        </referenceBlock>
+    </body>
+</page>

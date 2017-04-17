@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="search_result_list" >
+            <block name="placeholders_grid_1" class="Magento\Framework\View\Element\Template" template="Gabrielqs_ThemeSettings::product/list/placeholder.phtml" />
+            <block name="placeholders_grid_2" class="Magento\Framework\View\Element\Template" template="Gabrielqs_ThemeSettings::product/list/placeholder.phtml" />
+            <block name="placeholders_grid_3" class="Magento\Framework\View\Element\Template" template="Gabrielqs_ThemeSettings::product/list/placeholder.phtml" />
+            <block name="placeholders_grid_4" class="Magento\Framework\View\Element\Template" template="Gabrielqs_ThemeSettings::product/list/placeholder.phtml" />
+        </referenceBlock>
+    </body>
+</page>

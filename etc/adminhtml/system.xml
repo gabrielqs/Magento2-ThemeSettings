@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+    <system>
+        <section id="design">
+            <!-- Theme Settings -->
+            <group id="theme_settings" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Theme Settings</label>
+                <!-- Footer -->
+                <field id="footer_layout" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Footer Layout</label>
+                    <source_model>Gabrielqs\ThemeSettings\Model\Config\Footers</source_model>
+                </field>
+                <field id="header_layout" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Header Layout</label>
+                    <source_model>Gabrielqs\ThemeSettings\Model\Config\Headers</source_model>
+                </field>
+                <field id="home_banners_layout" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Home Banners Layout</label>
+                    <source_model>Gabrielqs\ThemeSettings\Model\Config\Banners</source_model>
+                </field>
+                <field id="product_list_item_layout" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Product List Item Layout</label>
+                    <source_model>Gabrielqs\ThemeSettings\Model\Config\ProductListItems</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="css/layout/header/header3.css"/>
+    </head>
+    <body>
+        <referenceContainer name="header.container" remove="true"/>
+        <referenceContainer name="page.top" remove="true"/>
+        <referenceContainer name="store_language" remove="true"/>
+        <referenceContainer name="currency" remove="true"/>
+        <referenceContainer name="skip_to_content" remove="true"/>
+        <container name="header.container.gabrielqs" htmlClass="panel wrapper" htmlTag="header">
+            <container name="header.panel.top" label="Page Header Panel" htmlTag="div" htmlClass="top-header">
+                <container name="header.panel.top.center" htmlTag="div" htmlClass="center">
+                    <!-- top.links -->
+                </container>
+            </container>
+            <container name="header.panel.mid" label="Page Header Panel" htmlTag="div" htmlClass="mid-header">
+                <container name="header.panel.mid.center" htmlTag="div" htmlClass="center">
+                    <!-- logo -->
+                    <!-- minicart -->
+                    <block class="Magento\Framework\View\Element\Template" name="contact_info"
+                           template="Magento_Theme::html/contact_info.phtml"/>
+                    <!-- info.contato -->
+                    <!-- top.search -->
+                    <!-- navigation.sections -->
+                </container>
+            </container>
+            <container name="header.panel.bottom" label="Page Header Panel" htmlTag="div" htmlClass="bottom-header">
+                <container name="header.panel.bottom.center" htmlTag="div" htmlClass="center"/>
+            </container>
+        </container>
+        <move element="header.container.gabrielqs" destination="page.wrapper" before="-"/>
+        <move element="top.links" destination="header.panel.top.center"/>
+        <move element="top.search" name="top.search" destination="header.panel.mid.center"/>
+        <move element="logo" name="logo" destination="header.panel.mid.center" after="top.search"/>
+        <move element="minicart" name="minicart" destination="header.panel.mid.center" after="logo"/>
+        <move element="navigation.sections" name="navigation.sections" destination="header.panel.bottom.center"/>
+    </body>
+</page>

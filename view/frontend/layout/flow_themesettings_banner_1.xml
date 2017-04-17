@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <script src="js/home/banners.js"/>
+        <css src="css/lib/owl/owl.carousel.css"/>
+        <css src="css/layout/banners/banner1.css"/>
+    </head>
+    <body>
+        <referenceContainer name="page.wrapper">
+            <block class="Magento\Framework\View\Element\Template" name="gabrielqs_banners" template="Gabrielqs_ThemeSettings::banners/banner1.phtml" before="main.content" />
+        </referenceContainer>
+    </body>
+</page>

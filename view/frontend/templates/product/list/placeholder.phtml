@@ -1,0 +1,10 @@
+<?php /** @var Magento\Framework\View\Element\Template $block */ ?>
+<div class="<?php echo $block->getNameInLayout() ?>">
+    <?php foreach($block->getChildNames() as $childName): ?>
+        <?php $childBlock = $block->getChildBlock($childName); ?>
+        <?php if ($childBlock): ?>
+            <?php $childBlock->setProduct($block->getProduct()); ?>
+            <?php echo $block->getChildHtml($childName, false); ?>
+        <?php endif; ?>
+    <?php endforeach; ?>
+</div>

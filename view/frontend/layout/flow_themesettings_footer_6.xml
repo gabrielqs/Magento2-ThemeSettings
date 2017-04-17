@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="css/layout/footer/footer6.css"/>
+    </head>
+    <body>
+        <referenceContainer name="footer-container" remove="true"/>
+        <referenceContainer name="before.body.end" remove="true"/>
+        <container name="footer.container.gabrielqs" htmlClass="footer-container" htmlTag="div">
+            <container name="footer.container.gabrielqs.footer" htmlClass="footer" htmlTag="div">
+                <!-- Social Block -->
+                <container name="footer.container.gabrielqs.footer.social" htmlClass="social-line col1-set" htmlTag="div">
+                    <container name="footer.container.gabrielqs.footer.social.center" htmlClass="center" htmlTag="div">
+                        <container name="footer.container.gabrielqs.footer.social.center.col1" htmlClass="col-1"
+                                   htmlTag="div">
+                            <!-- social_block -->
+                            <block class="Magento\Framework\View\Element\Template" name="social_block"
+                                   template="Magento_Theme::html/social_block.phtml"/>
+                        </container>
+                    </container>
+                </container>
+                <!-- Social Block -->
+                <!-- First Line  -->
+                <container name="footer.container.gabrielqs.footer.first.line" htmlClass="first-line col4-set" htmlTag="div">
+                    <container name="footer.container.gabrielqs.footer.first.line.center" htmlClass="center" htmlTag="div">
+                        <container name="footer.container.gabrielqs.footer.first.line.col1" htmlClass="col-1 atendimento"
+                                   htmlTag="div">
+                            <!-- first_line_col1 -->
+                            <block class="Magento\Framework\View\Element\Template" name="first_line_col1"
+                                   template="Magento_Theme::html/first_line_col1.phtml"/>
+                        </container>
+                        <container name="footer.container.gabrielqs.footer.first.line.col2" htmlClass="col-2 static-menu-1"
+                                   htmlTag="div">
+                            <!-- first_line_col2 -->
+                            <block class="Magento\Framework\View\Element\Template" name="first_line_col2"
+                                   template="Magento_Theme::html/first_line_col2.phtml"/>
+                        </container>
+                        <container name="footer.container.gabrielqs.footer.first.line.col3" htmlClass="col-3 pague-com"
+                                   htmlTag="div">
+                            <!-- first_line_col3 -->
+                            <block class="Magento\Framework\View\Element\Template" name="first_line_col3"
+                                   template="Magento_Theme::html/first_line_col3.phtml"/>
+                        </container>
+                        <container name="footer.container.gabrielqs.footer.first.line.col4" htmlClass="col-4 loja-segura"
+                                   htmlTag="div">
+                            <!-- first_line_col4 -->
+                            <block class="Magento\Framework\View\Element\Template" name="first_line_col4"
+                                   template="Magento_Theme::html/first_line_col4.phtml"/>
+                        </container>
+                    </container>
+                </container>
+                <!-- First Line  -->
+                <!-- Second Line  -->
+                <container name="footer.container.gabrielqs.footer.second.line" htmlClass="second-line col3-set"
+                           htmlTag="div">
+                    <container name="footer.container.gabrielqs.footer.second.line.center" htmlClass="center" htmlTag="div">
+                        <container name="footer.container.gabrielqs.footer.second.line.col1" htmlClass="col-1 redes-sociais"
+                                   htmlTag="div">
+                            <!-- second_line_col1 Redes Sociais -->
+                            <block class="Magento\Framework\View\Element\Template" name="redes_sociais"
+                                   template="Magento_Theme::html/redes_sociais.phtml"/>
+                        </container>
+                        <container name="footer.container.gabrielqs.footer.second.line.col2" htmlClass="col-2" htmlTag="div">
+                            <!-- second_line_col2-->
+                            <block class="Magento\Theme\Block\Html\Footer" name="col3set_second_line_col2"
+                                   template="Magento_Theme::html/second_line_col1.phtml"/>
+                        </container>
+                        <container name="footer.container.gabrielqs.footer.second.line.col3" htmlClass="col-3" htmlTag="div">
+                            <!-- second_line_col3 -->
+                            <block class="Magento\Framework\View\Element\Template" name="col3set_second_line_col3"
+                                   template="Magento_Theme::html/second_line_col2.phtml"/>
+                        </container>
+                    </container>
+                </container>
+                <!-- Second Line  -->
+            </container>
+        </container>
+    </body>
+</page>
